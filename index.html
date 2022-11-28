@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShivaIsha💓</title>
+    <link rel="icon" href="https://user-images.githubusercontent.com/119056381/204082522-c0e29675-7a64-42f3-a44b-74121599633a.jpg" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+
+
+
+</head>
+<body>
+<!-- extra -->
+<audio class="audio" src="https://www.mboxdrive.com/Selamat%20Ulang%20Tahun%20[Jamrud].mp3" autoplay type="audio"
+    loop=""></audio>
+  <div class="open">
+    <div class="card">
+      <h2>There is message for Isha💓</h2>
+      <img id ="demo" onclick="mulai()" src="https://i.postimg.cc/7ZH3t5dL/mail.png" alt="" srcset="" />
+      <h3>Click to Open!</h3>
+    </div>
+  </div>
+
+    <!-- end extra -->
+
+  <div class="bg_heart">
+  </div>
+  
+  <div class="container">
+  <h2 id="text1"></h2>
+    </div>
+
+  <div id="butt"></div>
+
+    
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var love = setInterval(function(){
+  var r_num = Math.floor(Math.random() * 40) + 1;
+	var r_size = Math.floor(Math.random() * 65) + 10;
+	var r_left = Math.floor(Math.random() * 100) + 1;
+	var r_bg = Math.floor(Math.random() * 25) + 100;
+  var r_time = Math.floor(Math.random() * 5) + 5;
+  $('.bg_heart').append("<div class='heart' style='width:"+r_size+"px;height:"+r_size+"px;left:"+r_left+"%;background:rgba(255,"+(r_bg-25)+","+r_bg+",1);-webkit-animation:love "+r_time+"s ease;-moz-animation:love "+r_time+"s ease;-ms-animation:love "+r_time+"s ease;animation:love "+r_time+"s ease'></div>");
+  
+  $('.bg_heart').append("<div class='heart' style='width:"+(r_size-10)+"px;height:"+(r_size-10)+"px;left:"+(r_left+r_num)+"%;background:rgba(255,"+(r_bg-25)+","+(r_bg+25)+",1);-webkit-animation:love "+(r_time+5)+"s ease;-moz-animation:love "+(r_time+5)+"s ease;-ms-animation:love "+(r_time+5)+"s ease;animation:love "+(r_time+5)+"s ease'></div>");
+  
+  
+},500);
+
+var i = 0;
+var txt1 = "Hi Isha.....!  <<               Now I wan't to say something special to you. <<<                So , Please read everything carefully...!                                                                           > When I saw you for the first time < You seems something Special to me.  <<                  As the days goes < you get closer to me....! <<                           I don't know the reason why your thoughts always resonates inside my mind...!                                                     > Everything about you is always intresting for me...!                     << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in future🥺...!                                                     > I Love my Parents so much than anything else in this world....!                    << Now You are the only person  whom I love equally with my parents....!                                                             > | I Love U <SweetHeart.....!                   <<<< I Adore You and Please always be mine💓 ...! <<< Scroll Down! ";
+
+
+
+var speed = 50;
+
+document.getElementById("demo").addEventListener("click", typeWriter);
+
+function typeWriter() {
+  if (i < txt1.length) {        
+     if(txt1.charAt(i)=='<')
+      document.getElementById("text1").innerHTML += '</br>'
+    else if(txt1.charAt(i)=='>')
+      document.getElementById("text1").innerHTML = ''
+   else if(txt1.charAt(i)=='|')
+      {
+        $(".bg_heart").css("background-image","url('https://user-images.githubusercontent.com/119056381/204042206-e4ee97f5-5af0-4106-a31b-34250812d2dd.png')");
+
+        document.getElementById('butt').innerHTML = `<div class="love">
+      <button type="button" id="button" class="buttons" onclick="window.location.href = 'https://shivaishaa.github.io/AboutYou/';">Click here to Open...!Next </button>
+      <div id="heart1" class="hearts"></div>
+      <div id="heart2" class="hearts"></div>
+      <div id="heart3" class="hearts"></div>
+      <div id="heart4" class="hearts"></div>
+      <div id="heart5" class="hearts"></div>
+    </div>`
+      }
+
+    else
+      document.getElementById("text1").innerHTML += txt1.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>
+
+<!-- extra script -->
+<script>
+
+  var musik = "FavSong.mp3";
+</script>
+<script> AOS.init({once: true, });</script>
+<script> var audio = document.querySelector(".audio"); if (musik) {audio.src = musik;} function mulai() {audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () {document.querySelector(".open").style.display = "none";}, 1000);} function wa(isi) {window.open("https://api.whatsapp.com/send?text= Makasih ya udah inget ulang tahun aku, di hari spesial ini aku pengin " + isi);} async function tanya() {var {value: kado} = await swal.fire({title: "Di hari spesial ini maunya bby apaa?", input: "text", showCancelButton: false, }); if (kado) {await swal.fire("Kirim jawabannya ke wa aku ya"); wa(kado);} else {await swal.fire("Jangan dikosongin dong"); tanya();} }</script>
+</html>
