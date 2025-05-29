@@ -18,6 +18,8 @@ Here is a separate page I created to describe **Isha**, her **lifestyle**, her *
 📍 Live Link
 👉 [Visit the Proposal Website](https://ishaa1.github.io)
 
+# Her Birthday Celeberated on VR Simulation Made With Love
+👉 [Visit the Simulated VR Site](https://www.spatial.io/s/Isha-Birthday-63b568261e4f630001d22b8d?share=7321889790515399469)
 
 ### ❤️ Final Words 💬
 Isha, if you ever came here to read this — Really THANK YOU cutie😭❤️ for being a part of my life 
